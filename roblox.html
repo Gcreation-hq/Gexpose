@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Roblox Exposé | GEXPOSE</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="style.css" />
-  <script defer src="main.js"></script>
 </head>
 <body>
   <header>
@@ -26,62 +26,34 @@
 
   <section class="hero">
     <h2>Roblox: Not As Safe As It Seems</h2>
-    <p>
-      I’ve met two predators on Roblox — one from Canada and one from my own country, Indonesia.
-      Roblox says it’s for kids, but its moderation tells another story.
-    </p>
+    <p>I’ve met predators. I reported them. Roblox did nothing. This is what I saw.</p>
   </section>
 
-  <section class="experience">
+  <section class="experience-section">
     <h3>What I've Witnessed</h3>
-
     <div class="cards">
-
-      <div class="card">
-        <h4>Predator Encounters</h4>
-        <p>
-          I was approached by strangers in private messages pretending to be kids. I blocked them,
-          but Roblox did nothing — they stayed online, free to talk to others.
-        </p>
+      <div class="card" onclick="highlightCard(this)">
+        <h4>Predator Approaches</h4>
+        <p>They used private chat, asked personal stuff. Roblox left them online.</p>
       </div>
-
-      <div class="card">
-        <h4>Moderation Failure</h4>
-        <p>
-          Even after reporting with evidence, moderation ignored it. Their filter blocks words, not people.
-          Dangerous users slip through easily.
-        </p>
+      <div class="card" onclick="highlightCard(this)">
+        <h4>Ignored Reports</h4>
+        <p>Even clear proof didn't matter. Moderation never replied.</p>
       </div>
-
-      <div class="card">
-        <h4>Exploits & Unsafe Games</h4>
-        <p>
-          I've seen games that bypass filters with inappropriate content. Some mimic popular games
-          to trick kids. These stay online for weeks.
-        </p>
+      <div class="card" onclick="highlightCard(this)">
+        <h4>Unsafe Games</h4>
+        <p>Games with adult content stayed up for days without action.</p>
       </div>
-
-      <div class="card">
-        <h4>False Sense of Security</h4>
-        <p>
-          Roblox advertises as safe for kids, but in reality, danger hides in plain sight — from chatrooms
-          to sponsored games with poor oversight.
-        </p>
+      <div class="card" onclick="highlightCard(this)">
+        <h4>Misleading Safety</h4>
+        <p>Parents think it's safe. They don't know what’s really happening.</p>
       </div>
-
-      <div class="card">
-        <h4>Neglected Reports</h4>
-        <p>
-          Reports take days, often never reviewed. I’ve tested this by reporting obvious abuse.
-          No response. It’s like shouting into the void.
-        </p>
-      </div>
-
     </div>
   </section>
 
   <footer>
     <p>© 2025 GEXPOSE | Created by Fariz</p>
   </footer>
+  <script defer src="main.js"></script>
 </body>
 </html>
