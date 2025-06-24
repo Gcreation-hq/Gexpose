@@ -52,7 +52,7 @@ nav ul li a:hover { color: var(--accent-yellow); }
 
 .card.active { box-shadow: 0 0 15px 4px #fca311, 0 0 30px 8px #fca311; z-index: 1; }
 
-.card.dimmed { filter: brightness(0.2) grayscale(40%); }
+.card.dimmed { filter: brightness(0.6) grayscale(20%); }
 
 footer { text-align: center; padding: 1rem; background-color: #1a1a1a; border-top: 1px solid #333; font-size: 0.9rem; }
 
