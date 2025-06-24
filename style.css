@@ -1,0 +1,48 @@
+/* style.css for Gexpose */
+
+:root { color-scheme: dark; --bg-color: #111; --text-color: #eee; --accent-red: #e63946; --accent-yellow: #fca311; --accent-white: #ffffff; }
+
+body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; }
+
+header { display: flex; justify-content: space-between; align-items: center; background-color: #1a1a1a; padding: 1rem 2rem; border-bottom: 2px solid var(--accent-red); }
+
+header .logo { display: flex; align-items: center; }
+
+header .logo img { height: 40px; margin-right: 0.75rem; }
+
+header .logo h1 { font-size: 1.5rem; color: var(--accent-red); margin: 0; }
+
+nav ul { list-style: none; display: flex; gap: 1rem; padding: 0; margin: 0; }
+
+nav ul li a { color: var(--text-color); text-decoration: none; transition: color 0.3s; }
+
+nav ul li a:hover { color: var(--accent-red); }
+
+.hero { text-align: center; padding: 4rem 2rem; background-color: #222; }
+
+.hero h2 { font-size: 2rem; margin-bottom: 1rem; color: var(--accent-white); }
+
+.hero p { max-width: 600px; margin: 0 auto 2rem auto; }
+
+.btn { background-color: var(--accent-red); color: white; padding: 0.75rem 1.5rem; border: none; border-radius: 8px; text-decoration: none; font-weight: bold; transition: background-color 0.3s; }
+
+.btn:hover { background-color: #c92c3a; }
+
+.mission, .platforms { padding: 2rem; text-align: center; }
+
+.cards { display: flex; justify-content: center; flex-wrap: wrap; gap: 2rem; margin-top: 2rem; }
+
+.card { background-color: #1f1f1f; border: 1px solid #333; padding: 1.5rem; border-radius: 12px; width: 280px; text-align: left; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); transition: transform 0.3s; }
+
+.card:hover { transform: translateY(-5px); }
+
+.card h4 { margin-top: 0; color: var(--accent-yellow); }
+
+.card a { color: var(--accent-yellow); text-decoration: none; font-weight: bold; }
+
+footer { text-align: center; padding: 1rem; background-color: #1a1a1a; border-top: 1px solid #333; font-size: 0.9rem; }
+
+footer a { color: var(--accent-yellow); text-decoration: none; }
+
+footer a:hover { text-decoration: underline; }
+
