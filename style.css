@@ -1,48 +1,141 @@
-/* style.css for Gexpose */
+:root {
+  color-scheme: dark;
+  --bg-color: #111;
+  --text-color: #fdfdfd;
+  --accent-yellow: #fca311;
+  --accent-white: #ffffff;
+}
 
-:root { color-scheme: dark; --bg-color: #111; --text-color: #fdfdfd; --accent-yellow: #fca311; --accent-white: #ffffff; }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
 
-body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; }
+/* Header Layout */
+header {
+  background-color: #1a1a1a;
+  border-bottom: 2px solid var(--accent-yellow);
+  padding: 1rem 1.5rem;
+}
 
-header { display: flex; align-items: center; background-color: #1a1a1a; padding: 1rem 1.5rem; border-bottom: 2px solid var(--accent-yellow); }
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-header .logo { margin-right: 2rem; }
+/* Logo */
+.logo h1 {
+  font-size: 1.8rem;
+  color: var(--accent-yellow);
+  margin: 0;
+}
 
-header .logo h1 { font-size: 1.8rem; color: var(--accent-yellow); margin: 0; }
+/* Hamburger Menu */
+.hamburger {
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: var(--accent-yellow);
+  display: none;
+}
 
-nav { flex-grow: 1; display: flex; justify-content: flex-start; }
+/* Nav Menu */
+nav {
+  margin-top: 1rem;
+}
 
-nav ul { list-style: none; display: flex; gap: 0.75rem; padding: 0; margin: 0; flex-wrap: wrap; }
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
 
-nav ul li a { color: var(--text-color); text-decoration: none; transition: color 0.3s; font-size: 1rem; padding: 0.3rem 0.5rem; }
+nav ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.3rem 0.5rem;
+  transition: color 0.3s;
+}
 
-nav ul li a:hover { color: var(--accent-yellow); }
+nav ul li a:hover {
+  color: var(--accent-yellow);
+}
 
-.hero { text-align: center; padding: 4rem 2rem; background-color: #222; }
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #222;
+}
 
-.hero h2 { font-size: 2rem; margin-bottom: 1rem; color: var(--accent-white); }
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--accent-white);
+}
 
-.hero p { max-width: 600px; margin: 0 auto 2rem auto; }
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+}
 
-.btn { background-color: var(--accent-yellow); color: black; padding: 0.75rem 1.5rem; border: none; border-radius: 8px; text-decoration: none; font-weight: bold; transition: background-color 0.3s; }
+.btn {
+  background-color: var(--accent-yellow);
+  color: black;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
 
-.btn:hover { background-color: #ffb733; }
+.btn:hover {
+  background-color: #ffb733;
+}
 
-.mission, .platforms { padding: 2rem; text-align: center; }
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1a1a1a;
+  border-top: 1px solid #333;
+  font-size: 0.9rem;
+}
 
-.cards { display: flex; justify-content: center; flex-wrap: wrap; gap: 2rem; margin-top: 2rem; }
+footer a {
+  color: var(--accent-yellow);
+  text-decoration: none;
+}
 
-.card { background-color: #1f1f1f; border: 1px solid #333; padding: 1.5rem; border-radius: 12px; width: 280px; text-align: left; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); transition: transform 0.3s; }
+footer a:hover {
+  text-decoration: underline;
+}
 
-.card:hover { transform: translateY(-5px); }
+/* Hides the nav by default on small screens */
+.hidden {
+  display: none;
+}
 
-.card h4 { margin-top: 0; color: var(--accent-yellow); }
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
 
-.card a { color: var(--accent-yellow); text-decoration: none; font-weight: bold; font-size: 0.9rem; }
-
-footer { text-align: center; padding: 1rem; background-color: #1a1a1a; border-top: 1px solid #333; font-size: 0.9rem; }
-
-footer a { color: var(--accent-yellow); text-decoration: none; font-size: 0.9rem; }
-
-footer a:hover { text-decoration: underline; }
-
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #1a1a1a;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 1px solid #333;
+    border-radius: 8px;
+  }
+}
