@@ -12,7 +12,7 @@ header .logo h1 { font-size: 1.5rem; color: var(--accent-yellow); margin: 0; }
 
 nav ul { list-style: none; display: flex; gap: 1rem; padding: 0; margin: 0; }
 
-nav ul li a { color: var(--text-color); text-decoration: none; transition: color 0.3s; }
+nav ul li a { color: var(--text-color); text-decoration: none; transition: color 0.3s; font-size: 0.9rem; }
 
 nav ul li a:hover { color: var(--accent-yellow); }
 
@@ -36,11 +36,11 @@ nav ul li a:hover { color: var(--accent-yellow); }
 
 .card h4 { margin-top: 0; color: var(--accent-yellow); }
 
-.card a { color: var(--accent-yellow); text-decoration: none; font-weight: bold; }
+.card a { color: var(--accent-yellow); text-decoration: none; font-weight: bold; font-size: 0.9rem; }
 
 footer { text-align: center; padding: 1rem; background-color: #1a1a1a; border-top: 1px solid #333; font-size: 0.9rem; }
 
-footer a { color: var(--accent-yellow); text-decoration: none; }
+footer a { color: var(--accent-yellow); text-decoration: none; font-size: 0.9rem; }
 
 footer a:hover { text-decoration: underline; }
 
