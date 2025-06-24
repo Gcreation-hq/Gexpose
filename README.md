@@ -86,6 +86,6 @@ Founder of **Gcreation** | Creator of **Gexpose**
 Powered by truth and courage ✊l
 
 
-##CHECK IT OUT!
+## CHECK IT OUT!
 
 https://gexpose.vercel.app/
