@@ -10,11 +10,11 @@ header .logo { display: flex; align-items: center; }
 
 header .logo h1 { font-size: 1.4rem; color: var(--accent-yellow); margin: 0; }
 
-nav ul { list-style: none; display: flex; gap: 2.5rem; padding: 0; margin: 0; }
+nav ul { list-style: none; display: flex; gap: 1rem; padding: 0; margin: 0; }
 
-nav ul li { margin-left: 0.5rem; }
+nav ul li { margin-left: 0; }
 
-nav ul li a { color: var(--text-color); text-decoration: none; transition: color 0.3s; font-size: 0.75rem; padding: 0.25rem 0.5rem; }
+nav ul li a { color: var(--text-color); text-decoration: none; transition: color 0.3s; font-size: 0.75rem; padding: 0.2rem 0.3rem; }
 
 nav ul li a:hover { color: var(--accent-yellow); }
 
