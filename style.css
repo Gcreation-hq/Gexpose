@@ -4,17 +4,17 @@
 
 body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; }
 
-header { display: flex; justify-content: space-between; align-items: center; background-color: #1a1a1a; padding: 1rem 3rem; border-bottom: 2px solid var(--accent-yellow); }
+header { display: flex; justify-content: space-between; align-items: center; background-color: #1a1a1a; padding: 1rem 2rem; border-bottom: 2px solid var(--accent-yellow); }
 
-header .logo { display: flex; align-items: center; }
+header .logo { display: flex; align-items: center; margin-right: auto; }
 
-header .logo h1 { font-size: 1.4rem; color: var(--accent-yellow); margin: 0; }
+header .logo h1 { font-size: 1.8rem; color: var(--accent-yellow); margin: 0; }
 
-nav ul { list-style: none; display: flex; gap: 1rem; padding: 0; margin: 0; }
+nav ul { list-style: none; display: flex; gap: 0.75rem; padding: 0; margin: 0; }
 
 nav ul li { margin-left: 0; }
 
-nav ul li a { color: var(--text-color); text-decoration: none; transition: color 0.3s; font-size: 0.75rem; padding: 0.2rem 0.3rem; }
+nav ul li a { color: var(--text-color); text-decoration: none; transition: color 0.3s; font-size: 1rem; padding: 0.3rem 0.5rem; }
 
 nav ul li a:hover { color: var(--accent-yellow); }
 
