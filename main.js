@@ -1,3 +1,8 @@
+
+document.querySelector(".logo h1").onclick = () => {
+  location.href = "legal.html";
+};
+
 // ===== Hamburger Menu Toggle =====
 document.getElementById("hamburger").addEventListener("click", function () {
   document.getElementById("nav-menu").classList.toggle("hidden");
@@ -25,3 +30,5 @@ cards.forEach((card) => {
     }
   });
 });
+
+
