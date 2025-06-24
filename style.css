@@ -1,22 +1,20 @@
 /* style.css for Gexpose */
 
-:root { color-scheme: dark; --bg-color: #111; --text-color: #eee; --accent-red: #e63946; --accent-yellow: #fca311; --accent-white: #ffffff; }
+:root { color-scheme: dark; --bg-color: #111; --text-color: #fdfdfd; --accent-yellow: #fca311; --accent-white: #ffffff; }
 
 body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; }
 
-header { display: flex; justify-content: space-between; align-items: center; background-color: #1a1a1a; padding: 1rem 2rem; border-bottom: 2px solid var(--accent-red); }
+header { display: flex; justify-content: space-between; align-items: center; background-color: #1a1a1a; padding: 1rem 2rem; border-bottom: 2px solid var(--accent-yellow); }
 
 header .logo { display: flex; align-items: center; }
 
-header .logo img { height: 40px; margin-right: 0.75rem; }
-
-header .logo h1 { font-size: 1.5rem; color: var(--accent-red); margin: 0; }
+header .logo h1 { font-size: 1.5rem; color: var(--accent-yellow); margin: 0; }
 
 nav ul { list-style: none; display: flex; gap: 1rem; padding: 0; margin: 0; }
 
 nav ul li a { color: var(--text-color); text-decoration: none; transition: color 0.3s; }
 
-nav ul li a:hover { color: var(--accent-red); }
+nav ul li a:hover { color: var(--accent-yellow); }
 
 .hero { text-align: center; padding: 4rem 2rem; background-color: #222; }
 
@@ -24,9 +22,9 @@ nav ul li a:hover { color: var(--accent-red); }
 
 .hero p { max-width: 600px; margin: 0 auto 2rem auto; }
 
-.btn { background-color: var(--accent-red); color: white; padding: 0.75rem 1.5rem; border: none; border-radius: 8px; text-decoration: none; font-weight: bold; transition: background-color 0.3s; }
+.btn { background-color: var(--accent-yellow); color: black; padding: 0.75rem 1.5rem; border: none; border-radius: 8px; text-decoration: none; font-weight: bold; transition: background-color 0.3s; }
 
-.btn:hover { background-color: #c92c3a; }
+.btn:hover { background-color: #ffb733; }
 
 .mission, .platforms { padding: 2rem; text-align: center; }
 
